@@ -9,7 +9,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 100dvh;
     margin: 0;
     touch-action: pan-y pinch-zoom;
 }
@@ -21,8 +21,8 @@ body {
     overflow: hidden;
     display: flex;
     flex-direction: column;
-    height: 700px;
-    max-height: 100dvh;
+    height: 900px;
+    max-height: 98dvh;
 }
 
 .tabs {
