@@ -142,9 +142,12 @@ body {
 }
 
 .play-pause.played {
+    background-color: #32ff77;   
+}
+
+.play-pause.paused {
     background-image: url("../img/pause-icon.svg"); 
     background-blend-mode: multiply;
-    background-color: #32ff77;   
 }
 
 

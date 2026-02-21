@@ -65,7 +65,9 @@
         }
         document.querySelectorAll('.play-pause').forEach(button => {
             button.addEventListener('click', function() {
-                this.classList.toggle('played');
+                this.classList.toggle('played') 
+                    ? this.classList.remove('paused') 
+                    : this.classList.add('paused');
             });
         });
 
