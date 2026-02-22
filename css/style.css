@@ -12,6 +12,19 @@ body {
     min-height: 100dvh;
     margin: 0;
     touch-action: pan-y pinch-zoom;
+    transition: background 0.3s ease;
+}
+
+body.playlist-0 {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+body.playlist-1 {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+}
+
+body.playlist-2 {
+    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 .app-container {
@@ -195,4 +208,5 @@ body {
 .dot.active {
     background: #2563eb;
     width: 20px;
+
 }
