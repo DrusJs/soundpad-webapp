@@ -9,10 +9,16 @@ const playlistsWrapper = document.getElementById('playlistsWrapper');
 const dots = document.querySelectorAll('.dot');
 const swipeArea = document.getElementById('swipeArea');
 
+function setBodyBackground(index) {
+    document.body.className = ''; 
+    document.body.classList.add(`playlist-${index}`);
+}
+
 function setActivePlaylist(index) {
     if (index < 0 || index >= tabs.length || index === currentPlaylistIndex) return;
 
     currentPlaylistIndex = index;
+    setBodyBackground(index);
     playlistsWrapper.style.transform = `translateX(-${index * 100}%)`;
 
     tabs.forEach((tab, i) => {
@@ -83,3 +89,4 @@ swipeArea.addEventListener('touchend', handleTouchEnd);
 window.addEventListener('resize', () => {
     playlistsWrapper.style.transform = `translateX(-${currentPlaylistIndex * 100}%)`;
 });
+
