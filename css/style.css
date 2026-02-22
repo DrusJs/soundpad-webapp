@@ -30,7 +30,7 @@ body.playlist-2 {
 .app-container {
     width: 100%;
     max-width: 400px;
-    background: white;
+    background: transparent;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -108,7 +108,7 @@ body.playlist-2 {
     height: 100%;
     overflow-y: auto;
     padding: 16px 12px;
-    background: #f9fafc;
+    background: transparent;
     scroll-behavior: smooth;
 }
 
@@ -210,3 +210,4 @@ body.playlist-2 {
     width: 20px;
 
 }
+
